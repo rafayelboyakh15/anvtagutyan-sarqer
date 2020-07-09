@@ -8,7 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <title>Apranq</title>
   </head>
   <body>
 <!-- header -->   
@@ -50,8 +51,8 @@
       </div>
       <div class="col-6 col-md-2 pr-3 ">
          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="my account.html" role="button" id="dropdownMenuLink">
-             My Account
+            <a class="btn btn-secondary dropdown-toggle" href="my account.html" role="button" id="dropdownMenuLink" >
+              Account
           </a>
 
     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -63,187 +64,90 @@
       </div>
     </div>
 
- 
-<div class="row ">
-  <div class="col-12 p-0">
-         <nav class="navbar navbar-expand-xl navbar-dark b25">
+   <div class="skizb rounded-pill"> 
+      <div class="d-flex justify-content-center">
+       <div><h3>Shipping Method</h3></div>
+      </div>
+  </div>
+
+<div class="d-flex justify-content-center">
+  <table class="table col-6">
+  <tr>
+    <th>Card Number</th>
+    <th>
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="0000-0000-0000-0000" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </th>
+  </tr>
+
+  <tr>
+    <th>Cardholder name</th>
+    <th>
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="AAAAAAA" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </th>
+  </tr>
   
-  <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="outline: none; border: none;">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <tr>
+    <th>Valid Thru</th>
+    <th>
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="09/07" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </th>
+  </tr>
 
-  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto ml-auto ">
+  <tr>
+    <th>CVV</th>
+    <th>
+      <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="123" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+    </th>
+  </tr>
 
-     
-       
-      <li class="nav-item dropdown text-center">
-        <a  href="product.html" class="nav-link dropdown-toggle text-light" >
-          DVR
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="product.html">DVR</a>
-          <a class="dropdown-item" href="product.html">NVR</a>
-        </div>
-      </li>
-       <li class="nav-item dropdown text-center">
-        <a class="nav-link dropdown-toggle text-light" href="product.html" >
-          Camera
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="product.html">IP</a>
-          <a class="dropdown-item" href="product.html">CCTV</a>
-        </div>
-      </li>
-       <li class="nav-item dropdown text-center">
-        <a class="nav-link dropdown-toggle text-light" href="product.html" >
-          HDD
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="product.html">1TB</a>
-          <a class="dropdown-item" href="product.html">2TB</a>
-          <a class="dropdown-item" href="product.html">4TB</a>
-          <a class="dropdown-item" href="product.html">6TB</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown text-center">
-        <a class="nav-link dropdown-toggle text-light" href="product.html" >
-          Router
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="product.html">Mikrotik</a>
-          <a class="dropdown-item" href="product.html">TP-Link</a>
-        </div>
-      </li>
-       
-    </ul>
-    
-  </div>
-</nav>
-  </div>     
-</div> 
+  <tr>
+    <th>E-Wallet</th>
+    <th>
+  
+      <div class="custom-control custom-radio custom-control-inline my-1">
+        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSsgzxBGPkDsTY51lqij_5sIlgqF5M-PfarKw&usqp=CAU" width="50px"></label>
+      </div>
+      
+      <div class="custom-control custom-radio custom-control-inline my-1">
+        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline2"><img src="https://telcellmoney.am/img/logo500.png" width="50px"></label>
+      </div>
+      
+      <div class="custom-control custom-radio custom-control-inline my-1">
+        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline3"><img src="https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/31/14/bd/3114bda3-b93d-80c0-6a90-27a30c5759a4/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/246x0w.png" width="50px"></label>
+      </div>
+      
+      <div class="custom-control custom-radio custom-control-inline my-1">
+        <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline4"><img src="https://banks.am/static/companies/images/e2c599138a9f2e97ea7c95bc72a8acc7.jpg" width="50px"></label>
+      </div>
+      
+      <div class="custom-control custom-radio custom-control-inline my-1">
+        <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+        <label class="custom-control-label" for="customRadioInline5"><img src="https://static.qiwi.com/img/providers/300x300/qiwi.png" width="50px"></label>
+      </div>
 
-    </div>
-    
-
-  <div class="container-fluid">
-        <br>
-        <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-    <li class="breadcrumb-item active" aria-current="page">HDD</li>
-  </ol>
-</nav>
-        <br>
-        
-        <div class="row">
-          <div class="col-8 col-md-2 d-none d-md-block">
-           <div class="accordion" id="accordionExample">
-  <div class="card">
-    <div class="card-header" id="headingOne">
-      <h2 class="mb-0">
-        <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Select size
+    </th>
+  </tr>
+  </table>
+</div>
+<div class="d-flex justify-content-around">
+      <a href="ok.html">
+        <button type="button" class="btn btn-outline-secondary">
+        Shipping
         </button>
-      </h2>
+      </a>
     </div>
-
-    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              1TB
-            </label>
-          </div>
-          <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              2TB
-            </label>
-          </div>
-          <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              4TB
-            </label>
-          </div>
-          <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-            <label class="form-check-label" for="defaultCheck1">
-              6TB
-            </label>
-          </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-  </div>
-
-<div class="d-flex flex-column bd-highlight mb-3">
-  <div class="p-2 bd-highlight">
-  <div class="col-md-8 col-lg-10">   
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="https://c.dns-shop.ru/thumb/st1/fit/800/650/54fb4e4b10799d091353447c8d0d3ff5/388d249f2647a68a2a5281c68ff6df754843fcf3c433ba22ef257b228b715574.jpg" class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title"><a href="apranq.html">HDD 1TB</a></h5>
-            <p class="card-text">The Seagate 7200 BarraCuda [ST1000DM010] hard drive is equipped with a spindle that performs 7200 rpm per minute, which for the better affects the performance of the drive with data.</p>
-            <h5>60$</h5>
-            <a href="cart.html"><button type="button" class="btn btn-success">Add to cart</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> 
- 
- <div class="p-2 bd-highlight">
-  <div class="col-md-8 col-lg-10">   
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="https://c.dns-shop.ru/thumb/st1/fit/800/650/54fb4e4b10799d091353447c8d0d3ff5/388d249f2647a68a2a5281c68ff6df754843fcf3c433ba22ef257b228b715574.jpg" class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title"><a href="apranq.html">HDD 1TB</a></h5>
-            <p class="card-text">The Seagate 7200 BarraCuda [ST1000DM010] hard drive is equipped with a spindle that performs 7200 rpm per minute, which for the better affects the performance of the drive with data.</p>
-            <h5>60$</h5>
-            <a href="cart.html"><button type="button" class="btn btn-success">Add to cart</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> 
-</div>
-
-<div class="p-2 bd-highlight">
-  <div class="col-md-8 col-lg-10">   
-    <div class="card mb-3" style="max-width: 540px;">
-      <div class="row no-gutters">
-        <div class="col-md-4">
-          <img src="https://c.dns-shop.ru/thumb/st1/fit/800/650/54fb4e4b10799d091353447c8d0d3ff5/388d249f2647a68a2a5281c68ff6df754843fcf3c433ba22ef257b228b715574.jpg" class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title"><a href="apranq.html">HDD 1TB</a></h5>
-            <p class="card-text">The Seagate 7200 BarraCuda [ST1000DM010] hard drive is equipped with a spindle that performs 7200 rpm per minute, which for the better affects the performance of the drive with data.</p>
-            <h5>60$</h5>
-           <a href="cart.html"><button type="button" class="btn btn-success">Add to cart</button></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div> 
-</div>
-</div>
-</div>
 
 
 <!doctype html>
@@ -362,18 +266,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   </body>
 </html>
 
-
-
-
-<!-- header -->
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
-</html>
